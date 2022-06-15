@@ -1,16 +1,16 @@
 #Terraform
 
-TERRAFORM_VERSION="0.12.29"
+# TERRAFORM_VERSION="0.12.29"
 
-curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
-&& curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_SHA256SUMS \
-&& curl https://keybase.io/hashicorp/pgp_keys.asc | gpg --import \
-&& curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_SHA256SUMS
+# curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
+# && curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_SHA256SUMS \
+# && curl https://keybase.io/hashicorp/pgp_keys.asc | gpg --import \
+# && curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_SHA256SUMS
 
-#sudo wget https://releases.hashicorp.com/terraform/1.1.5/terraform_1.1.5_linux_amd64.zip
-#sudo apt install unzip && unzip terraform_1.1.5_linux_amd64.zip
-#sudo mv terraform /usr/local/bin/terraform
-#sudo chmod -R 777 /usr/local/bin/terraform
+sudo wget https://releases.hashicorp.com/terraform/1.1.5/terraform_1.1.5_linux_amd64.zip
+sudo apt install unzip && unzip terraform_1.1.5_linux_amd64.zip
+sudo mv terraform /usr/local/bin/terraform
+sudo chmod -R 777 /usr/local/bin/terraform
 
 #GIT
 sudo apt install git-all -y
